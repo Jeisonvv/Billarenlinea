@@ -1,0 +1,122 @@
+body{
+    background: #181818;
+    color: #9f992c;
+    
+}
+/* estilos del header */
+.header{
+    background: url('/assets/425293670_1133105587661948_1860453686029873523_n.jpg')  center center;
+    background-size: cover;
+    margin-bottom: 2%;
+
+}
+/* centramos los elmentos que hay en el nav */
+.menu_nav{
+    height: 10vh;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    place-items: center;
+}
+/* esta es la imagen del logo billar en linea
+ */
+.logo{
+    height: 50px;
+    width: 50px;
+}
+/* estilos del titulo */
+.header_title{
+    padding: 5px;
+    font-size: 1.3em;
+    color: #c5bb02;
+    border-radius: 5px;
+    background: #18181889;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+/* estilos del menu para movil estilo hamburgesa
+*/
+.menu_movile{
+    height: 40px;
+    width: 40px;
+    border: 2px solid #c5bb02;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    transition: 300ms ease-in-out;
+    background:radial-gradient(#000000,#7f7e7e);
+    &:hover{
+        box-shadow: 1px 2px 10px #c5bb02;
+    }
+}
+/* estilos de los span del menu */
+.bar{
+    height: 3px;
+    width: 30px;
+    background-color: #c5bb02;
+    border-radius: 5px;
+    transition: 200ms ease-in-out;
+
+}
+/* creamos la actividad que va agenerar el movimiento de los espan */
+.menu_movile.active .bar:nth-last-child(1){
+    transform: translateY(-11px) rotate(-45deg);
+}
+.menu_movile.active .bar:nth-last-child(2){
+    opacity: 0;
+}
+.menu_movile.active .bar:nth-last-child(3){
+    transform: translateY(11px) rotate(45deg);
+}
+/* menu desplegable */
+.menudeplegable{
+    height: 40vh;
+    width: 40vw;
+    position: absolute;
+    border-radius: 10%;
+    background: #262626;
+    display: grid;
+    place-items: center;
+    transition: 300ms ease-in-out;
+    transform: translateX(110vw);
+    box-shadow: 0px 0px 10px #f9f9f7;
+   
+}
+/* esta es la clase que muestra el menu desplegable*/
+.click{
+    transform: translateX(59vw) translateY(0.5vh);
+    transition: 300ms ease-in-out;
+    
+}
+/* estilos de la ul del menu */
+.menuDeplegable_ul{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+/* los estilos de los liick del menu desplegable */
+.menuDesplegable_a{
+    color: #9f992c;
+    display: block;
+    width: 95%;
+    margin: auto;
+    padding: 2%;
+    &:hover{
+        background: #9f992c;
+        color: #000000;
+    }
+}
+/* estilos generales del main */
+.main{
+    width: 90%;
+    padding: 2%;
+    margin: auto;
+    background: #262626;
+    text-align: center;
+}
