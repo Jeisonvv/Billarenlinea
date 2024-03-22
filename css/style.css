@@ -1,11 +1,12 @@
 body{
     background: #181818;
     color: #9f992c;
+    width: 100vw;
     
 }
 /* estilos del header */
 .header{
-    background: url('/assets/425293670_1133105587661948_1860453686029873523_n.jpg')  center center;
+    background: url('/assets/portada.jpg')  center center;
     background-size: cover;
     margin-bottom: 2%;
 
